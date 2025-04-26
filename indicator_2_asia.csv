@@ -1,0 +1,52 @@
+country,alpha_2_code,alpha_3_code,numeric_code,indicator,time_period,obs_value,sex,unit_multiplier,unit_of_measure,observation_status,observation_confidentaility,time_period_activity_related_to_when_the_data_are_collected,current_age
+Armenia,AM,ARM,51,Percentage Children suffering exactly four deprivation. Homogeneous severe standards,2015,0.0,Female,,%,,,,Total
+Armenia,AM,ARM,51,Percentage Children suffering exactly four deprivation. Homogeneous severe standards,2015,0.0,Male,,%,,,,Total
+Armenia,AM,ARM,51,Percentage Children suffering exactly four deprivation. Homogeneous severe standards,2015,0.0,Total,,%,,,,Total
+Bangladesh,BD,BGD,50,Percentage Children suffering exactly four deprivation. Homogeneous severe standards,2014,0.0028614746406674,Female,,%,,,,Total
+Bangladesh,BD,BGD,50,Percentage Children suffering exactly four deprivation. Homogeneous severe standards,2014,0.0,Male,,%,,,,Total
+Bangladesh,BD,BGD,50,Percentage Children suffering exactly four deprivation. Homogeneous severe standards,2014,0.0014310299884527,Total,,%,,,,Total
+Cambodia,KH,KHM,116,Percentage Children suffering exactly four deprivation. Homogeneous severe standards,2014,0.9912391304969788,Female,,%,,,,Total
+Cambodia,KH,KHM,116,Percentage Children suffering exactly four deprivation. Homogeneous severe standards,2014,1.1012784242630005,Male,,%,,,,Total
+Cambodia,KH,KHM,116,Percentage Children suffering exactly four deprivation. Homogeneous severe standards,2014,1.0471380949020386,Total,,%,,,,Total
+India,IN,IND,356,Percentage Children suffering exactly four deprivation. Homogeneous severe standards,2015,0.1203664764761924,Female,,%,,,,Total
+India,IN,IND,356,Percentage Children suffering exactly four deprivation. Homogeneous severe standards,2015,0.0831706747412681,Male,,%,,,,Total
+India,IN,IND,356,Percentage Children suffering exactly four deprivation. Homogeneous severe standards,2015,0.1010846644639968,Total,,%,,,,Total
+Iraq,IQ,IRQ,368,Percentage Children suffering exactly four deprivation. Homogeneous severe standards,2018,0.0011199946748092,Female,,%,,,,Total
+Iraq,IQ,IRQ,368,Percentage Children suffering exactly four deprivation. Homogeneous severe standards,2018,0.0,Male,,%,,,,Total
+Iraq,IQ,IRQ,368,Percentage Children suffering exactly four deprivation. Homogeneous severe standards,2018,0.0005428740987554,Total,,%,,,,Total
+Kyrgyzstan,KG,KGZ,417,Percentage Children suffering exactly four deprivation. Homogeneous severe standards,2018,0.0,Female,,%,,,,Total
+Kyrgyzstan,KG,KGZ,417,Percentage Children suffering exactly four deprivation. Homogeneous severe standards,2018,0.0,Male,,%,,,,Total
+Kyrgyzstan,KG,KGZ,417,Percentage Children suffering exactly four deprivation. Homogeneous severe standards,2018,0.0,Total,,%,,,,Total
+Lao People's Democratic Republic,LA,LAO,418,Percentage Children suffering exactly four deprivation. Homogeneous severe standards,2017,0.5443589687347412,Female,,%,,,,Total
+Lao People's Democratic Republic,LA,LAO,418,Percentage Children suffering exactly four deprivation. Homogeneous severe standards,2017,0.4379705488681793,Male,,%,,,,Total
+Lao People's Democratic Republic,LA,LAO,418,Percentage Children suffering exactly four deprivation. Homogeneous severe standards,2017,0.4900700747966766,Total,,%,,,,Total
+Maldives,MV,MDV,462,Percentage Children suffering exactly four deprivation. Homogeneous severe standards,2016,0.0,Female,,%,,,,Total
+Maldives,MV,MDV,462,Percentage Children suffering exactly four deprivation. Homogeneous severe standards,2016,0.0,Male,,%,,,,Total
+Maldives,MV,MDV,462,Percentage Children suffering exactly four deprivation. Homogeneous severe standards,2016,0.0,Total,,%,,,,Total
+Mongolia,MN,MNG,496,Percentage Children suffering exactly four deprivation. Homogeneous severe standards,2018,0.0158799029886722,Female,,%,,,,Total
+Mongolia,MN,MNG,496,Percentage Children suffering exactly four deprivation. Homogeneous severe standards,2018,0.0184191726148128,Male,,%,,,,Total
+Mongolia,MN,MNG,496,Percentage Children suffering exactly four deprivation. Homogeneous severe standards,2018,0.0171865299344062,Total,,%,,,,Total
+Myanmar,MM,MMR,104,Percentage Children suffering exactly four deprivation. Homogeneous severe standards,2015,0.0555508956313133,Female,,%,,,,Total
+Myanmar,MM,MMR,104,Percentage Children suffering exactly four deprivation. Homogeneous severe standards,2015,0.0818918272852897,Male,,%,,,,Total
+Myanmar,MM,MMR,104,Percentage Children suffering exactly four deprivation. Homogeneous severe standards,2015,0.068918727338314,Total,,%,,,,Total
+Nepal,NP,NPL,524,Percentage Children suffering exactly four deprivation. Homogeneous severe standards,2016,0.0079449750483036,Female,,%,,,,Total
+Nepal,NP,NPL,524,Percentage Children suffering exactly four deprivation. Homogeneous severe standards,2016,0.0310067329555749,Male,,%,,,,Total
+Nepal,NP,NPL,524,Percentage Children suffering exactly four deprivation. Homogeneous severe standards,2016,0.019512066617608,Total,,%,,,,Total
+Pakistan,PK,PAK,586,Percentage Children suffering exactly four deprivation. Homogeneous severe standards,2017,0.1652894914150238,Female,,%,,,,Total
+Pakistan,PK,PAK,586,Percentage Children suffering exactly four deprivation. Homogeneous severe standards,2017,0.1354946792125702,Male,,%,,,,Total
+Pakistan,PK,PAK,586,Percentage Children suffering exactly four deprivation. Homogeneous severe standards,2017,0.1504030972719192,Total,,%,,,,Total
+Tajikistan,TJ,TJK,762,Percentage Children suffering exactly four deprivation. Homogeneous severe standards,2017,0.0,Female,,%,,,,Total
+Tajikistan,TJ,TJK,762,Percentage Children suffering exactly four deprivation. Homogeneous severe standards,2017,0.0,Male,,%,,,,Total
+Tajikistan,TJ,TJK,762,Percentage Children suffering exactly four deprivation. Homogeneous severe standards,2017,0.0,Total,,%,,,,Total
+Thailand,TH,THA,764,Percentage Children suffering exactly four deprivation. Homogeneous severe standards,2015,0.0043589132837951,Female,,%,,,,Total
+Thailand,TH,THA,764,Percentage Children suffering exactly four deprivation. Homogeneous severe standards,2015,0.0,Male,,%,,,,Total
+Thailand,TH,THA,764,Percentage Children suffering exactly four deprivation. Homogeneous severe standards,2015,0.0021386633161455,Total,,%,,,,Total
+Timor-Leste,TL,TLS,626,Percentage Children suffering exactly four deprivation. Homogeneous severe standards,2016,0.1357703655958175,Female,,%,,,,Total
+Timor-Leste,TL,TLS,626,Percentage Children suffering exactly four deprivation. Homogeneous severe standards,2016,0.1423589140176773,Male,,%,,,,Total
+Timor-Leste,TL,TLS,626,Percentage Children suffering exactly four deprivation. Homogeneous severe standards,2016,0.1391684263944625,Total,,%,,,,Total
+Turkmenistan,TM,TKM,795,Percentage Children suffering exactly four deprivation. Homogeneous severe standards,2015,0.0,Female,,%,,,,Total
+Turkmenistan,TM,TKM,795,Percentage Children suffering exactly four deprivation. Homogeneous severe standards,2015,0.0,Male,,%,,,,Total
+Turkmenistan,TM,TKM,795,Percentage Children suffering exactly four deprivation. Homogeneous severe standards,2015,0.0,Total,,%,,,,Total
+Yemen,YE,YEM,887,Percentage Children suffering exactly four deprivation. Homogeneous severe standards,2013,0.37213996052742,Female,,%,,,,Total
+Yemen,YE,YEM,887,Percentage Children suffering exactly four deprivation. Homogeneous severe standards,2013,0.2420530766248703,Male,,%,,,,Total
+Yemen,YE,YEM,887,Percentage Children suffering exactly four deprivation. Homogeneous severe standards,2013,0.3058465719223022,Total,,%,,,,Total

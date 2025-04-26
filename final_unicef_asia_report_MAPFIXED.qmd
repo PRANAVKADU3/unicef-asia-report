@@ -1,0 +1,110 @@
+---
+title: "Global Health Challenges Affecting Children in Asia"
+author: "Pranav Kadu"
+format:
+  html:
+    embed-resources: true
+    code-fold: true
+editor: visual
+---
+
+# Introduction
+
+Children across Asia face diverse health challenges that impact their growth, education, and opportunities. This report explores key UNICEF indicators — from healthcare access to disease burden — to highlight disparities and inform future initiatives.
+
+**Key Focus Areas:** - **Healthcare Access:** Examining life expectancy and hospital bed availability. - **Economic Influence:** Linking GDP per capita with child health outcomes. - **Disease Burden:** Monitoring HIV incidence among young populations. - **Social Deprivation:** Studying multiple deprivation rates among children.
+
+# Load Data
+
+```{r}
+library(ggplot2)
+library(dplyr)
+library(readr)
+
+metadata <- read_csv("metadata_asia.csv")
+metadata_scatter <- read_csv("metadata_asia_scatter_ready.csv")
+indicator_1 <- read_csv("indicator_1_asia.csv")
+indicator_2 <- read_csv("indicator_2_asia.csv")
+```
+
+# World Map: Life Expectancy Across Asia
+
+```{r}
+library(maps)
+
+world_map <- map_data("world")
+
+# Fix mismatched country names
+metadata_fixed <- metadata %>%
+  mutate(country = case_when(
+    country == "Republic of Korea" ~ "South Korea",
+    country == "Lao People's Democratic Republic" ~ "Laos",
+    country == "Russian Federation" ~ "Russia",
+    country == "Syrian Arab Republic" ~ "Syria",
+    country == "Iran (Islamic Republic of)" ~ "Iran",
+    TRUE ~ country
+  ))
+
+# Prepare latest year
+metadata_latest <- metadata_fixed %>%
+  group_by(country) %>%
+  filter(year == max(year)) %>%
+  select(country, `Life expectancy at birth, total (years)`)
+
+# Join to map
+map_data_asia <- world_map %>%
+  left_join(metadata_latest, by = c("region" = "country"))
+
+ggplot(map_data_asia, aes(long, lat, group = group, fill = `Life expectancy at birth, total (years)`)) +
+  geom_polygon(color = "white") +
+  scale_fill_viridis_c(option = "C") +
+  theme_minimal() +
+  labs(title = "Life Expectancy Across Asia", fill = "Life Expectancy")
+```
+
+# Bar Chart: Child Deprivation in Asian Countries
+
+```{r}
+indicator_2_filtered <- indicator_2 %>%
+  filter(time_period == max(time_period), sex == "Total") %>%
+  arrange(desc(obs_value)) %>%
+  top_n(10, obs_value)
+
+ggplot(indicator_2_filtered, aes(x = reorder(country, obs_value), y = obs_value, fill = country)) +
+  geom_bar(stat = "identity") +
+  coord_flip() +
+  scale_fill_brewer(palette = "Set3") +
+  theme_minimal() +
+  labs(title = "Top 10 Asian Countries by Child Deprivation Rate", x = "Country", y = "Deprivation (%)")
+```
+
+# Scatter Plot: GDP per Capita vs Life Expectancy
+
+```{r}
+latest_scatter <- metadata_scatter %>%
+  group_by(country) %>%
+  filter(year == max(year)) %>%
+  select(country, `GDP per capita (constant 2015 US$)`, `Life expectancy at birth, total (years)`)
+
+ggplot(latest_scatter, aes(x = `GDP per capita (constant 2015 US$)`, y = `Life expectancy at birth, total (years)`)) +
+  geom_point(color = "seagreen") +
+  geom_smooth(method = "lm", se = FALSE, color = "black") +
+  theme_minimal() +
+  labs(title = "GDP per Capita vs Life Expectancy (Asia)", x = "GDP per Capita (USD)", y = "Life Expectancy (Years)")
+```
+
+# Time Series: HIV Incidence Rates Over Time
+
+```{r}
+indicator_1_filtered <- indicator_1 %>%
+  filter(sex == "Total", indicator == "Estimated incidence rate (new HIV infection per 1,000 uninfected population)")
+
+ggplot(indicator_1_filtered, aes(x = time_period, y = as.numeric(obs_value), color = country)) +
+  geom_line(size = 1) +
+  theme_minimal() +
+  labs(title = "HIV Incidence Rates Over Time (Asia)", x = "Year", y = "HIV Incidence (per 1000)")
+```
+
+# Conclusion
+
+This analysis highlights critical health gaps affecting children across Asian countries. While progress has been made in disease control and healthcare access, economic disparities and social deprivations persist, requiring urgent and targeted interventions.
